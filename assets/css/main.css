@@ -40,7 +40,7 @@
 
 
 
-/* =================PAGE==================== */
+/* ================= LANDING PAGE==================== */
 
 /* SECTION 1 */
 #section-1{
@@ -68,6 +68,15 @@
         width: 30%;
     }
 };
+
+/* SECTION 2 */
+.section-2-1{
+    padding: 3% 0px;
+    background-image: url('../img/background-section-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 /* ABOUT US */
