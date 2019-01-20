@@ -10,6 +10,15 @@
 }
 
 /* BUTTON */
+.btn-light{
+    background-color:white;
+    color: #008000;
+}
+.btn-light:hover{
+    color: white;
+    background-color: #008000;
+    border-color: white;
+}
 .btn-green{
     background-color: #008000;
     color: white;
@@ -33,14 +42,7 @@
     border-bottom:3px solid #008000;
 }
 
-
-
-
-
-
-
-
-/* =================PAGE==================== */
+/* ================= LANDING PAGE==================== */
 
 /* SECTION 1 */
 #section-1{
@@ -67,8 +69,127 @@
         margin-top: 20%;
         width: 30%;
     }
-};
+}
 
+/* SECTION 2 */
+#section-2{
+    background-color: #008000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 3%;
+}
+/* SECTION 2 EVENT */
+#section-2-1-event{
+    position: relative;
+}
+#section-2-1-btn-prev{
+    position: absolute;
+    left: 0%;
+    margin-top: 15%;
+    cursor: pointer;
+}
+#section-2-1-btn-next{
+    position: absolute;
+    right: 0%;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+#event-card{
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+.col-card{
+    margin: 2% !important;
+}
+#section-2-1-btn .btn{
+    display: block;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    #section-2-1-event{
+        padding-bottom: 20%;
+    }
+    #section-2-1-btn-prev{
+        left: 35%;
+        bottom: 2%;
+    }
+    #section-2-1-btn-prev img{
+        width: 150%;
+    }
+    #section-2-1-btn-next{
+        right: 35%;
+        bottom: 2%
+    }
+    #section-2-1-btn-next img{
+        width: 150%;
+    }
+    #section-2-1-btn .btn{
+        bottom: 0%;
+    }
+}
+
+
+/* SECTION 3 */
+#section-3{
+    background-image: url('../svg/section-3.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -1px;
+}
+#section-3-1-heading{
+    display: inline;
+    text-align: right;
+    color: white;
+}
+
+.section-3-1-nav {
+    overflow: hidden;
+    color: white;
+    float: right;
+}
+.section-3-1-nav a {
+    cursor: pointer;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+  
+.section-3-1-nav a:hover {
+    border-bottom: 3px solid #B8F8F8;
+}
+  
+.section-3-1-nav a.active {
+    border-bottom: 3px solid #B8F8F8;
+}
+
+@media only screen and (max-width: 600px){
+    #section-3-1{
+        padding-top: 50%;
+        color: #008000;
+    }
+    #section-3-1-heading{
+        text-align: left;
+        color: black;
+    }
+    .section-3-1-nav{
+        color: #008000;
+        float: left;
+    }
+    .section-3-1-nav a:hover {
+        border-bottom: 3px solid #008000;
+    }    
+    .section-3-1-nav a.active {
+        border-bottom: 3px solid #008000;
+    }   
+}
 
 /* ABOUT US */
 .aboutus-section{
