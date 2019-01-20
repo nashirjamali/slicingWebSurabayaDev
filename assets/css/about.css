@@ -56,3 +56,51 @@ section{
 	color: green;
 	font-weight: bold;
 }
+
+@media only screen and (max-width: 600px) {
+	
+	section{
+		padding:50px 0;
+	}
+
+	#sejarah-section{
+		position: relative;
+	}
+
+	#sejarah-section-img1{
+		position: absolute;
+		right: 0px;
+	}
+
+	#sejarah-section-h41{
+		position: absolute;
+		top: 350px;
+	}
+
+	#sejarah-section-img2{
+		position: absolute;
+		right: 0px;
+		top: 460px;
+	}
+
+	#sejarah-section-h42{
+		position: absolute;
+		top: 787px;
+	} 
+
+	.sejarah-section-img{
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.title-style{
+		font-size: 38px;
+	}
+
+	.H-grey{
+		font-size: 15px;
+		text-align: center;
+		margin-top:0;
+	}
+};
