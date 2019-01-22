@@ -137,6 +137,64 @@ section{
 	}
 }
 
+/* @media only screen and (max-width: 414px) {
+
+	section{
+		padding:50px 0;
+	}
+
+	#sejarah-section-row{
+		position: relative;
+	}
+
+	#sejarah-section-img1{
+		position: absolute;
+		right: 11%;
+		width: 300px;
+	}
+
+	#sejarah-section-h41{
+		position: absolute;
+		top: 170px;
+		right: 0;
+		padding: 20px; 
+	}
+
+	#sejarah-section-img2{
+		position: absolute;
+		top: 455px;
+		right: 12%;
+		width: 300px;
+	}
+
+	#sejarah-section-h42{
+		position: absolute;
+		top: 680px;
+		right: 0;
+		padding: 20px;
+	}
+
+	.sejarah-section-img{
+		height: 100%;
+		width: 100%;
+		text-align: center;
+	}
+
+	.title-style{
+		font-size: 38px;
+	}
+
+	.H-grey{
+		font-size: 0.9rem;
+		text-align: center;
+		margin-top:0;
+	}
+
+	.visimisi-section{
+		margin-top: 923px;	
+	}
+}
+
 @media only screen and (max-width: 375px) {
 
 	section{
@@ -189,61 +247,11 @@ section{
 		text-align: center;
 		margin-top:0;
 	}
-}
 
-@media only screen and (max-width: 414px) {
-
-	section{
-		padding:50px 0;
+	.visimisi-section{
+		margin-top: 250%;	
 	}
-
-	#sejarah-section-row{
-		position: relative;
-	}
-
-	#sejarah-section-img1{
-		position: absolute;
-		right: 11%;
-		width: 300px;
-	}
-
-	#sejarah-section-h41{
-		position: absolute;
-		top: 170px;
-		right: 0;
-		padding: 20px; 
-	}
-
-	#sejarah-section-img2{
-		position: absolute;
-		top: 455px;
-		right: 12%;
-		width: 300px;
-	}
-
-	#sejarah-section-h42{
-		position: absolute;
-		top: 680px;
-		right: 0;
-		padding: 20px;
-	}
-
-	.sejarah-section-img{
-		height: 100%;
-		width: 100%;
-		text-align: center;
-	}
-
-	.title-style{
-		font-size: 38px;
-	}
-
-	.H-grey{
-		font-size: 0.9rem;
-		text-align: center;
-		margin-top:0;
-	}
-}
+}*/
 
 @media only screen and (max-width: 320px) {
 
@@ -287,6 +295,67 @@ section{
 		width: 100%;
 		text-align: center;
 	}
+
+	.title-style{
+		font-size: 38px;
+	}
+
+	.H-grey{
+		font-size: 0.9rem;
+		text-align: center;
+		margin-top:0;
+	}
+
+	.visimisi-section{
+		margin-top: 983px;	
+	}
+} 
+
+@media screen and (min-width: 321px) and (max-width: 767px) {
+	
+	section{
+		padding:50px 0;
+	}
+
+	.sec_dalam{
+		margin-top: 15%;
+	}
+
+	#sejarah-section-row{
+		position: relative;
+	}
+
+	#sejarah-section-img1{
+		position: absolute;
+		width: 350px;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#sejarah-section-h41{
+		position: absolute;
+		top: 200px;
+		right: 0;
+		padding: 20px;
+	}
+
+	#sejarah-section-img2{
+		margin-top: 460px;
+		width: 350px;
+		position: absolute;
+		right: 0;
+		left: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#sejarah-section-h42{
+		padding: 20px;
+		margin-top: 750px;
+	}
+
 
 	.title-style{
 		font-size: 38px;
