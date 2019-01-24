@@ -32,34 +32,36 @@
             color: #707070;
         }
 
-        #sejarah-section-1{
+        #sejarah-section-1 {
             position: relative;
         }
-        #sejarah-section-img1{
+
+        #sejarah-section-img1 {
             position: absolute;
             right: 0;
             width: 50%;
         }
+
         #sejarah-section-desc1 {
             padding: 15% 0;
             width: 45%;
         }
 
         #sejarah-section-2 {
-            margin-top: 20%;
+            margin-top: 10%;
             position: relative;
         }
 
-        #sejarah-section-img2 img{
-            width: 50%;
-            position: absolute;
-        }
-        #sejarah-section-desc2 {
+        #sejarah-section-img2 {
             width: 50%;
         }
 
-        .sejarah-section-2-inline{
+        #sejarah-section-desc2 {
+            width: 45%;
+            padding-top: 10%;
         }
+
+        .sejarah-section-2-inline {}
 
         @media only screen and (max-width: 1024px) {
             .sejarah-section h4 {
@@ -67,21 +69,36 @@
                 font-size: 1.2rem;
             }
 
-            #sejarah-section-img1{
+            #sejarah-section-img1 {
                 position: static;
                 width: 100%;
                 margin: 10% auto 0 auto;
                 display: table;
             }
-            #sejarah-section-img1 img{
+
+            #sejarah-section-img1 img {
                 margin: 0 auto;
                 display: table;
             }
 
-            
+            #sejarah-section-desc1 {
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            }
 
-            
-            #sejarah-section-desc1{
+            #sejarah-section-img2 {
+                width: 100%;
+                margin: 5% auto 2% auto;
+                display: table;
+            }
+
+            #sejarah-section-img2 img {
+                margin: 0 auto;
+                display: table;
+            }
+
+            #sejarah-section-desc2 {
                 width: 100%;
                 text-align: center;
                 padding: 5px;
@@ -166,29 +183,33 @@
                 </div>
             </div>
 
-            
+
             <div id="sejarah-section-2">
-                <div id="sejarah-section-img2" class="sejarah-section-2-inline">
-                    <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
-                </div>
-                <div id="sejarah-section-desc2" class="sejarah-section-2-inline justify-content-end">
-                    <p>Kegiatan rutin SurabayaDev diadakan setiap
-                        bulan. Lokasi acara SurabayaDev pertama adalah
-                        Dilo Surabaya (Telkom Ketintang 2014-2018).
-                        Selain Dilo Surabaya lokasi co working space
-                        seperti Sub Co juga pernah menjadi tempat acara
-                        SurabayaDev. Namun sejak akhir tahun 2017
-                        SurabayaDev berkembang untuk mencoba hal
-                        baru berkolaborasi dan mendatangi lokasi lokasi
-                        baru seperti lembaga atau institusi pendidikan
-                        untuk lebih dekat dengan teman teman surabaya
-                        dev yang masih berstatus pelajar,mahasiswa
-                        maupun umum. <br>
-                        Seiring perkembangan waktu saat ini Surabaya
-                        Dev memiliki struktur organisasi dan program
-                        kegiatan. Memiliki lebih dari 1500 anggota grup
-                        yang terdapat di forum telegram.
-                    </p>
+                <div class="container">
+                    <div class="row">
+                        <div id="sejarah-section-img2" class="sejarah-section-2-inline">
+                            <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
+                        </div>
+                        <div id="sejarah-section-desc2">
+                            <p>Kegiatan rutin SurabayaDev diadakan setiap
+                                bulan. Lokasi acara SurabayaDev pertama adalah
+                                Dilo Surabaya (Telkom Ketintang 2014-2018).
+                                Selain Dilo Surabaya lokasi co working space
+                                seperti Sub Co juga pernah menjadi tempat acara
+                                SurabayaDev. Namun sejak akhir tahun 2017
+                                SurabayaDev berkembang untuk mencoba hal
+                                baru berkolaborasi dan mendatangi lokasi lokasi
+                                baru seperti lembaga atau institusi pendidikan
+                                untuk lebih dekat dengan teman teman surabaya
+                                dev yang masih berstatus pelajar,mahasiswa
+                                maupun umum. <br>
+                                Seiring perkembangan waktu saat ini Surabaya
+                                Dev memiliki struktur organisasi dan program
+                                kegiatan. Memiliki lebih dari 1500 anggota grup
+                                yang terdapat di forum telegram.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -216,7 +237,7 @@
                     <img src="./assets/img/2x/pict1-section_sejarah_kami.png  " alt="" class="img-fluid">
                 </div>
             </div> -->
-<!-- 
+            <!-- 
             <div class="row" id="sejarah-section-2">
                 <div class="col-md-6 col-lg-6">
                     <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
