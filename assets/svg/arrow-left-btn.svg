@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58" height="58.04" viewBox="0 0 58 58.04">
+  <defs>
+    <filter id="BG_Danger" x="0" y="0" width="58" height="58.04" filterUnits="userSpaceOnUse">
+      <feOffset dx="-1.286" dy="1.532" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f93a85" flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="arrow-left-btn" transform="translate(10.286 7.468)">
+    <g id="Only_Iocn" data-name="Only Iocn" transform="translate(0)">
+      <g transform="matrix(1, 0, 0, 1, -10.29, -7.47)" filter="url(#BG_Danger)">
+        <ellipse id="BG_Danger-2" data-name="BG Danger" cx="20" cy="20.02" rx="20" ry="20.02" transform="translate(10.29 7.47)" fill="#00a040"/>
+      </g>
+    </g>
+    <path id="ic_chevron_right_24px" d="M18.494,6l2.327,2.327L13.261,15.9l7.56,7.576-2.327,2.327-9.9-9.9Z" transform="translate(5.129 4.03)" fill="#fff"/>
+  </g>
+</svg>
