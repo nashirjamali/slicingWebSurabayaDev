@@ -5,14 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About Us</title>
-  <link rel="stylesheet" href="./assets/css/about.css">
-  <link rel="stylesheet" href="./assets/css/main.css">
   <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <style>
+      
+      /* #707070 */
+      section{
+          margin-top: 7%;
+      }
+
+      .sejarah-section{
+          background: grey;
+      }
+
+      .visimisi-section{
+          background: green;
+      }
+
+      .program-section{
+          background: gold;
+      } 
+
+      .tim-section{
+          background: greenyellow;
+          margin-top: 10%;
+      }
+
+      #Big-head{
+        width: 100%;
+      }
+
+      h1{
+        text-shadow: 2px 5px 2px rgba(34,30,43,0.17);
+        color: white;
+        font-weight: bold;
+      }
+
+      p{
+        color: white;
+        font-size: 1.167rem;
+      }
+
+     .visimisi-section-row{
+         padding-right: 20%;
+         padding-left: 20%;
+     }    
+
+     .program-section p{
+         font-size: 1.6rem;
+         color: blue;
+     }
+
+     .program-section-h1{
+         color: black;
+     }
+
+     .program-section-row{
+         margin-bottom: 15%;
+     }
+
+      @media only screen and (max-width: 1024px) {
+        .sejarah-section p{
+            font-size: 1rem;
+        }
+
+      }
+
+      @media only screen and (max-width: 768px) {
+        .sejarah-section p{
+            font-size: 0.742rem;
+        }
+
+        .visimisi-section h4{
+            font-size: 1.5rem;
+        }
+
+        .visimisi-section-row{
+            padding-right: 7%;
+            padding-left: 7%;
+        }
+        
+        .program-section p{
+         font-size: 1rem;
+        }
+
+      }
+
+      @media only screen and (max-width: 767px) {
+        .sejarah-section-row1{
+            position: relative;
+        }
+
+        .sejarah-section #sejarah-section-img1{
+            position: absolute;
+        }
+
+        .sejarah-section #sejarah-section-desc1{
+            margin-top: 90%;
+        } 
+        
+        .sejarah-section #sejarah-section-desc2{
+            margin-top: 7%;
+        }
+        
+        .sejarah-section p{
+            text-align: center;
+        }
+
+        .visimisi-section p{
+            font-size: 0.9rem;
+            margin-top: 5%;
+        }
+        
+        .visimisi-section-row{
+            padding-right: 0;
+            padding-left: 0;
+        }
+        
+        .program-section-row2{
+            position: relative;
+        }
+
+        .program-section-row2 #program-section-col2{
+             margin-top: 100% !important;
+         }
+
+        .program-section-row2 #program-section-img2{
+            position: absolute;
+        }
+        
+        .program-section p, .program-section h1{
+            text-align: center;
+        }
+
+      }
+  
+  </style>
 </head>
 <body>
 
      <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./assets/img/logoSurabayaDevSmall.png" alt="" srcset=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -43,341 +176,220 @@
             </div>
         </div>
     </nav>
- 
+
     <img src="./assets/img/2x/bgheader-section_first.png" alt="" id="Big-head">
 
-    <section class="container" id="sejarah-section">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 class="title-style">Sejarah Kami</h1>
-          </div>
+    <section class="sejarah-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                <h1 class="title-style">Sejarah Kami</h1>
+                </div>
+            </div>
+            <div class="row sejarah-section-row1">
+                <div class="col-md-6 mt-5 my-auto">
+                    <p id="sejarah-section-desc1">SurabayaDev lahir pada tahun 2014 dari 
+                        gagasan bersama yang di inisiasi oleh Achmad 
+                        Fatoni, Arryangga Aliev Pratama, Antoni Putra 
+                        dan atas keinginan teman teman di 
+                        perusahaan tempat kerja yang sama saat itu 
+                        yang ingin membuat sebuah perkumpulan 
+                        dalam sebuah kelas diskusi. Sempat terpikir 
+                        untuk di beri nama Laravel Surabaya, namun 
+                        perkembangan jaman semakin maju 
+                        framework laravel juga akan terganti dengan 
+                        yang baru, maka dari itu tepat pada bulan 
+                        april acara pertama lahirlah Surabaya 
+                        Developer atau disingkat SurabayaDev. 
+                    </p>
+                </div>
+                <div class="col-md-6" id="sejarah-section-img1">
+                    <img src="./assets/img/2x/pict1-section_sejarah_kami.png  "alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-6">
+                <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6 col-lg-6 mt-5 my-auto">
+                    <p id="sejarah-section-desc2">
+                        Kegiatan rutin SurabayaDev diadakan setiap 
+                        bulan. Lokasi acara SurabayaDev pertama adalah 
+                        Dilo Surabaya (Telkom Ketintang 2014-2018). 
+                        Selain Dilo Surabaya lokasi co working space 
+                        seperti Sub Co juga pernah menjadi tempat acara 
+                        SurabayaDev. Namun sejak akhir tahun 2017 
+                        SurabayaDev berkembang untuk mencoba hal 
+                        baru berkolaborasi dan mendatangi lokasi lokasi 
+                        baru seperti lembaga atau institusi pendidikan 
+                        untuk lebih dekat dengan teman teman surabaya 
+                        dev yang masih berstatus pelajar,mahasiswa 
+                        maupun umum. <br>
+                        Seiring perkembangan waktu saat ini Surabaya 
+                        Dev memiliki struktur organisasi dan program 
+                        kegiatan. Memiliki lebih dari 1500 anggota grup 
+                        yang terdapat di forum telegram.
+                    </p>
+                </div>
+            </div> 
         </div>
-        <div class="row sejarah-section-row">
-          <div class="col-md-6 mt-2">
-            <h4 class="H-grey" id="sejarah-section-h41">SurabayaDev lahir pada tahun 2014 dari 
-                gagasan bersama yang di inisiasi oleh Achmad 
-                Fatoni, Arryangga Aliev Pratama, Antoni Putra 
-                dan atas keinginan teman teman di 
-                perusahaan tempat kerja yang sama saat itu 
-                yang ingin membuat sebuah perkumpulan 
-                dalam sebuah kelas diskusi. Sempat terpikir 
-                untuk di beri nama Laravel Surabaya, namun 
-                perkembangan jaman semakin maju 
-                framework laravel juga akan terganti dengan 
-                yang baru, maka dari itu tepat pada bulan 
-                april acara pertama lahirlah Surabaya 
-                Developer atau disingkat SurabayaDev. 
-            </h4>
-          </div>
-          <div class="col-md-6 ">
-            <img src="./assets/img/2x/pict1-section_sejarah_kami.png  " id="sejarah-section-img1" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="row sejarah-section-row sec_dalam">
-          <div class="col-md-6 col-lg-6">
-            <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" id="sejarah-section-img2" alt="">
-          </div>
-          <div class="col-md-6 col-lg-6 mt-5">
-          <h4 class="H-grey" id="sejarah-section-h42">Kegiatan rutin SurabayaDev diadakan setiap 
-                bulan. Lokasi acara SurabayaDev pertama adalah 
-                Dilo Surabaya (Telkom Ketintang 2014-2018). 
-                Selain Dilo Surabaya lokasi co working space 
-                seperti Sub Co juga pernah menjadi tempat acara 
-                SurabayaDev. Namun sejak akhir tahun 2017 
-                SurabayaDev berkembang untuk mencoba hal 
-                baru berkolaborasi dan mendatangi lokasi lokasi 
-                baru seperti lembaga atau institusi pendidikan 
-                untuk lebih dekat dengan teman teman surabaya 
-                dev yang masih berstatus pelajar,mahasiswa 
-                maupun umum. <br>
-                Seiring perkembangan waktu saat ini Surabaya 
-                Dev memiliki struktur organisasi dan program 
-                kegiatan. Memiliki lebih dari 1500 anggota grup 
-                yang terdapat di forum telegram.</h4>
-          </div>
-        </div> 
     </section> 
 
     <section class="visimisi-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col text-center">
-            <h1 class="title-style">Visi Kami</h1>
-          </div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Visi Kami</h1>
+                </div>
+            </div>
+            <div class="row visimisi-section-row">
+                <div class="col-12">
+                    <p class="text-center">
+                        SurabayaDev adalah komunitas IT yang membantu meningkatkan 
+                        dan memanfaatkan potensi pegiat IT di seluruh Indonesia 
+                        khususnya di kota Surabaya dalam bidang teknologi, guna 
+                        mendukung, untuk mewujudkan suatu kondisi yang saling 
+                        melengkapi dalam rangka peningkatan keahlian, dan semangat 
+                        kerjasama.
+                    </p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">
+                    <h1>Misi Kami</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-center">
+                        Memberi edukasi di bidang ilmu Teknologi melalui seminar & pelatihan.
+                        <br> 
+                        Meningkatkan kualitas pegiat Teknologi.
+                    </p>
+                </div>
+            </div>
         </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-8">
-            <h4 class="text-center H-grey">SurabayaDev adalah komunitas IT yang membantu meningkatkan 
-                dan memanfaatkan potensi pegiat IT di seluruh Indonesia 
-                khususnya di kota Surabaya dalam bidang teknologi, guna 
-                mendukung, untuk mewujudkan suatu kondisi yang saling 
-                melengkapi dalam rangka peningkatan keahlian, dan semangat 
-                kerjasama.
-            </h4>
-          </div>
-        </div>
-        <div class="row my-5">
-          <div class="col text-center">
-            <h1 class="title-style">Misi Kami</h1>
-          </div>
-        </div>
-        <div class="row d-flex justify-content-center">
-          <div class="col-8">
-            <h4 class="text-center H-grey">Memberi edukasi di bidang ilmu Teknologi melalui seminar & pelatihan.
-                <br> Meningkatkan kualitas pegiat Teknologi.</h4>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="program-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col text-center">
-            <h1 class="title-style">Program kegiatan Kami</h1>
-          </div>
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h1>Program kegiatan Kami</h1>
+                </div>
+            </div>
+            <div class="row program-section-row">
+                <div class="col-md-6">
+                    <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" id="program-section-img1" class="img-fluid">
+                </div>
+                <div class="col-md-6 mt-3">
+                    <h1 class="program-section-h1">Seminar</h1>
+                    <p>
+                        Diadakan setiap bulan dengan tema berbeda. 
+                        Kegiatan ini mencakup materi yang berkaitan 
+                        dengan IT. Sebagai Komunitas anak muda yang 
+                        berbasis IT Surabaya Dev membantu para pegiat 
+                        IT untuk menyalurkan serta membagi ilmu dan 
+                        saling berdiskusi mengenai teknologi terbaru. 
+                        Acara ini tidak berbayar.
+                    <p>
+                </div>
+            </div>
+            <div class="row program-section-row program-section-row2">
+                <div class="col mt-3" id="program-section-col2">
+                    <h1 class="program-section-h1">Pelatihan</h1>
+                    <p>
+                        #SurabayaDev memiliki program pelatihan IT 
+                        dengan sasaran pelajar / mahasiswa Diadakan 
+                        setiap 2 bulan sekali Kegiatan ini mencakup 
+                        materi pelatihan dasar yang sedang dibutuhkan 
+                        dalam dunia industri IT
+                    </p>
+                </div>
+                <div class="col-md-6" id="program-section-img2">
+                    <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="row program-section-row">
+                <div class="col-md-6">
+                    <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" id="program-section-img3" class="img-fluid">
+                </div>
+                <div class="col mt-3">
+                    <h1 class="program-section-h1">Gathering</h1>
+                    <p>
+                        #SurabayaDev berkolaborasi dengan berbagai 
+                        lintas komunitas untuk saling bersinergi dan 
+                        berbagi.
+                        Gathering ini merupakan bentuk kerjasama 
+                        #SurabayaDev dengan komunitas / Organisasi / 
+                        Lembaga secara berkelompok menciptakan suatu 
+                        kegiatan bersama yang seru dan berkualitas.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Program kami yang lainya</h1>
+                    <button type="button" class="btn btn-green mt-3">Klik Disini</button>
+                </div>
+            </div>
         </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-          </div>
-          <div class="col-md-6 mt-3">
-            <h1>Seminar</h1>
-            <h4 class="program-section-desc">Diadakan setiap bulan dengan tema berbeda. 
-                Kegiatan ini mencakup materi yang berkaitan 
-                dengan IT. Sebagai Komunitas anak muda yang 
-                berbasis IT Surabaya Dev membantu para pegiat 
-                IT untuk menyalurkan serta membagi ilmu dan 
-                saling berdiskusi mengenai teknologi terbaru. 
-                Acara ini tidak berbayar.</h4>
-          </div>
-        </div>
-        <div class="row sec_dalam program-section-row">
-          <div class="col mt-3 program-section-col" id="program-section-col">
-            <h1>Pelatihan</h1>
-            <h4 class="program-section-desc">#SurabayaDev memiliki program pelatihan IT 
-                dengan sasaran pelajar / mahasiswa Diadakan 
-                setiap 2 bulan sekali Kegiatan ini mencakup 
-                materi pelatihan dasar yang sedang dibutuhkan 
-                dalam dunia industri IT</h4>
-          </div>
-          <div class="col-md-6">
-            <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-          </div>
-        </div>
-        <div class="row sec_dalam">
-          <div class="col-md-6">
-            <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-          </div>
-          <div class="col mt-3">
-            <h1>Gathering</h1>
-            <h4 class="program-section-desc">#SurabayaDev berkolaborasi dengan berbagai 
-                lintas komunitas untuk saling bersinergi dan 
-                berbagi.
-                Gathering ini merupakan bentuk kerjasama 
-                #SurabayaDev dengan komunitas / Organisasi / 
-                Lembaga secara berkelompok menciptakan suatu 
-                kegiatan bersama yang seru dan berkualitas.</h4>
-          </div>
-        </div>
-        <div class="row sec_dalam">
-          <div class="col text-center">
-            <h1>Program kami yang lainya</h1>
-            <button type="button" class="btn btn-success mt-3">Klik Disini</button>
-          </div>
-        </div>
-      </div>
     </section>
 
-  <!-- <img src="./assets/img/2x/bgheader-section_first.png" alt="" id="Big-head">
-  <img src="./assets/svg/ring_left-section_tim_kami.svg" alt="" id="Ringdown-left" class="img-fluid">
-  <img src="./assets/svg/ring_left-section_sejarah_kami.svg" alt="" id="Ringup-left" class="img-fluid">
-  <img src="./assets/svg/buaya-section_program_kegiatan_kami.svg" alt="" id="Buaya-left">
-  <img src="./assets/svg/ring_right-section_visi_misi.svg" alt="" id="Ringup-right" class="img-fluid">
-  <img src="./assets/svg/hiu-section_program_kegiatan_kami.svg" alt="" id="Hiu-right"> -->
-
-  <!-- Begin::Sejarah -->
-  <!-- <section class="sejarah-section">
-    <div class="container">
-      <div class="row">
-        <div class="col text-center mb-5">
-          <h1 class="title-style">Sejarah Kami</h1>
+    <section class="tim-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col text-center">
+                    <h1>Tim Kami</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
+                    <h3>Achmad Fatoni</h3>
+                    <h5>Founder</h5>
+                </div>
+                <div class="col text-center">
+                    <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
+                    <h3>Arryangga Aliev P.</h3>
+                    <h5>Founder</h5>
+                </div>
+                <div class="col text-center">
+                    <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
+                    <h3>Antoni Putra</h3>
+                    <h5>Founder</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-green mt-5 text-center">View All Team</button>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 mt-5">
-          <h4 class="H-grey">SurabayaDev lahir pada tahun 2014 dari 
-              gagasan bersama yang di inisiasi oleh Achmad 
-              Fatoni, Arryangga Aliev Pratama, Antoni Putra 
-              dan atas keinginan teman teman di 
-              perusahaan tempat kerja yang sama saat itu 
-              yang ingin membuat sebuah perkumpulan 
-              dalam sebuah kelas diskusi. Sempat terpikir 
-              untuk di beri nama Laravel Surabaya, namun 
-              perkembangan jaman semakin maju 
-              framework laravel juga akan terganti dengan 
-              yang baru, maka dari itu tepat pada bulan 
-              april acara pertama lahirlah Surabaya 
-              Developer atau disingkat SurabayaDev. 
-          </h4>
-        </div>
-        <div class="col-md-6 ">
-          <img src="./assets/img/2x/pict1-section_sejarah_kami.png  " alt="" class="img-fluid">
-        </div>
-      </div>
-      <div class="row sec_dalam">
-        <div class="col-md-6 col-lg-6">
-          <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
-        </div>
-        <div class="col-md-6 col-lg-6 mt-5">
-        <h4 class="H-grey">Kegiatan rutin SurabayaDev diadakan setiap 
-              bulan. Lokasi acara SurabayaDev pertama adalah 
-              Dilo Surabaya (Telkom Ketintang 2014-2018). 
-              Selain Dilo Surabaya lokasi co working space 
-              seperti Sub Co juga pernah menjadi tempat acara 
-              SurabayaDev. Namun sejak akhir tahun 2017 
-              SurabayaDev berkembang untuk mencoba hal 
-              baru berkolaborasi dan mendatangi lokasi lokasi 
-              baru seperti lembaga atau institusi pendidikan 
-              untuk lebih dekat dengan teman teman surabaya 
-              dev yang masih berstatus pelajar,mahasiswa 
-              maupun umum. <br>
-              Seiring perkembangan waktu saat ini Surabaya 
-              Dev memiliki struktur organisasi dan program 
-              kegiatan. Memiliki lebih dari 1500 anggota grup 
-              yang terdapat di forum telegram.</h4>
-        </div>
-      </div> 
-    </div>
-  </section> -->
-  <!-- End::Sejarah -->
-
-  <!-- Begin::Misi&Visi -->
-  <!-- <section class="aboutus-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col text-center">
-          <h1 class="title-style">Visi Kami</h1>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-8">
-          <h4 class="text-center H-grey">SurabayaDev adalah komunitas IT yang membantu meningkatkan 
-              dan memanfaatkan potensi pegiat IT di seluruh Indonesia 
-              khususnya di kota Surabaya dalam bidang teknologi, guna 
-              mendukung, untuk mewujudkan suatu kondisi yang saling 
-              melengkapi dalam rangka peningkatan keahlian, dan semangat 
-              kerjasama.
-          </h4>
-        </div>
-      </div>
-      <div class="row my-5">
-        <div class="col text-center">
-          <h1 class="title-style">Misi Kami</h1>
-        </div>
-      </div>
-      <div class="row d-flex justify-content-center">
-        <div class="col-8">
-          <h4 class="text-center H-grey">Memberi edukasi di bidang ilmu Teknologi melalui seminar & pelatihan.
-              <br> Meningkatkan kualitas pegiat Teknologi.</h4>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- ENd::Misi&Visi -->
-
-  <!-- Began::ProgramKegiatan -->
-  <!-- <section class="aboutus-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col text-center">
-          <h1 class="title-style">Program kegiatan Kami</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-        </div>
-        <div class="col-md-6 mt-5">
-          <h1>Seminar</h1>
-          <h4 class="H-grey">Diadakan setiap bulan dengan tema berbeda. 
-              Kegiatan ini mencakup materi yang berkaitan 
-              dengan IT. Sebagai Komunitas anak muda yang 
-              berbasis IT Surabaya Dev membantu para pegiat 
-              IT untuk menyalurkan serta membagi ilmu dan 
-              saling berdiskusi mengenai teknologi terbaru. 
-              Acara ini tidak berbayar.</h4>
-        </div>
-      </div>
-      <div class="row sec_dalam">
-        <div class="col mt-5">
-          <h1>Pelatihan</h1>
-          <h4 class="H-grey">#SurabayaDev memiliki program pelatihan IT 
-              dengan sasaran pelajar / mahasiswa Diadakan 
-              setiap 2 bulan sekali Kegiatan ini mencakup 
-              materi pelatihan dasar yang sedang dibutuhkan 
-              dalam dunia industri IT</h4>
-        </div>
-        <div class="col">
-          <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-        </div>
-      </div>
-      <div class="row sec_dalam">
-        <div class="col">
-          <img src="./assets/img/2x/picture_card-section_program_kami.png" alt="" class="img-fluid">
-        </div>
-        <div class="col mt-5">
-          <h1>Gathering</h1>
-          <h4 class="H-grey">#SurabayaDev berkolaborasi dengan berbagai 
-              lintas komunitas untuk saling bersinergi dan 
-              berbagi.
-              Gathering ini merupakan bentuk kerjasama 
-              #SurabayaDev dengan komunitas / Organisasi / 
-              Lembaga secara berkelompok menciptakan suatu 
-              kegiatan bersama yang seru dan berkualitas.</h4>
-        </div>
-      </div>
-      <div class="row sec_dalam">
-        <div class="col text-center">
-          <h1>Program kami yang lainya</h1>
-          <button type="button" class="btn btn-success mt-3">Klik Disini</button>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End::ProgramKegiatan -->
-
-  <!-- Began::Tim Kami -->
-  <!-- <section class="aboutus-section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col text-center">
-          <h1>Tim Kami</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-          <h3>Achmad Fatoni</h3>
-          <h5>Founder</h5>
-        </div>
-        <div class="col-md-4 text-center">
-          <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-          <h3>Arryangga Aliev P.</h3>
-          <h5>Founder</h5>
-        </div>
-        <div class="col-md-4 text-center">
-          <img src="./assets/img/2x/teamprofile-section_tim_kita.png" alt="" class="img-fluid">
-          <h3>Antoni Putra</h3>
-          <h5>Founder</h5>
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- End::Tim Kami -->
+    </section>
 
 
+    <img id="section-5-footer" src="./assets/svg/section-5-3.svg" alt="" srcset="">
 
+    <footer>
+        <div id="footer">
+            <h5>©2017 SurabayaDev. All rights reserved</h5>
+            <div id="sosmed">
+                <a href="">
+                    <img src="./assets/svg/instagram-icon.svg" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="./assets/svg/twitter-icon.svg" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="./assets/svg/facebook-icon.svg" alt="" srcset="">
+                </a>
+                <a href="">
+                    <img src="./assets/svg/youtube-icon.svg" alt="" srcset="">
+                </a>
+            </div>
+        </div>
+    </footer>
 
   <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
   <script src="./assets/js/popper.min.js"></script>
