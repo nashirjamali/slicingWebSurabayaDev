@@ -1,133 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About Us</title>
-  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-  <style>
-      
-      section{
-          margin-top: 7%;
-      }
-
-      .sejarah-section{
-          background: grey;
-      }
-
-      .visimisi-section{
-          background: yellow;
-      }
-
-      .program-section{
-          background: gold;
-      }
-
-      h1{
-        text-shadow: 2px 5px 2px rgba(34,30,43,0.17);
-        color: white;
-        font-weight: bold;
-      }
-
-      h4{
-        color: white;
-      }
-
-      @media only screen and (max-width: 1024px) {
-        .sejarah-section h4{
-            text-align: center;
-            font-size: 1.2rem;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <style>
+        section {
+            margin-top: 7%;
         }
 
-      }
+        .sejarah-section {
+            /* background: grey; */
+        }
 
-      @media only screen and (max-width: 768px) {
-          .sejarah-section h4{
-              font-size: 0.9rem;
-          }
-          
-          #sejarah-section-h42{
-              margin-top: -25px;
-          }
+        .visimisi-section {
+            background: yellow;
+        }
 
-          .visimisi-section h4{
-              font-size: 1.5rem;
-          }
-      }
+        .program-section {
+            background: gold;
+        }
 
-      @media only screen and (max-width: 767px) {
-        .sejarah-section{
+        h1 {
+            color: #008000;
+        }
+
+        h5 {
+            color: #707070;
+        }
+
+        #sejarah-section-1{
+            position: relative;
+        }
+        #sejarah-section-img1{
+            position: absolute;
+            right: 0;
+            width: 50%;
+        }
+        #sejarah-section-desc1 {
+            padding: 15% 0;
+            width: 45%;
+        }
+
+        #sejarah-section-2 {
+            margin-top: 20%;
             position: relative;
         }
 
-        .sejarah-section #sejarah-section-img1{
+        #sejarah-section-img2 img{
+            width: 50%;
             position: absolute;
         }
+        #sejarah-section-desc2 {
+            width: 50%;
+        }
 
-        .sejarah-section #sejarah-section-desc1{
-            margin-top: 77%;
-        } 
-        
-      }
-  
-  </style>
+        .sejarah-section-2-inline{
+        }
+
+        @media only screen and (max-width: 1024px) {
+            .sejarah-section h4 {
+                text-align: center;
+                font-size: 1.2rem;
+            }
+
+            #sejarah-section-img1{
+                position: static;
+                width: 100%;
+                margin: 10% auto 0 auto;
+                display: table;
+            }
+            #sejarah-section-img1 img{
+                margin: 0 auto;
+                display: table;
+            }
+
+            
+
+            
+            #sejarah-section-desc1{
+                width: 100%;
+                text-align: center;
+                padding: 5px;
+            }
+
+        }
+
+        /* @media only screen and (max-width: 768px) {
+            #sejarah-section-1 {
+                position: relative;
+            }
+
+            #sejarah-section-img1 {
+                position: absolute;
+                top: 0;
+                margin: 0 auto;
+                right: 0;
+                left: 0;
+            }
+
+            #sejarah-section-desc1 {
+                display: table;
+                margin: 80% auto 0 auto;
+            }
+
+            #sejarah-section-h42 {
+                margin-top: -25px;
+            }
+
+            .visimisi-section h4 {
+                font-size: 1.5rem;
+            }
+        } */
+
+        /* @media only screen and (max-width: 767px) {
+            .sejarah-section {
+                position: relative;
+            }
+
+            .sejarah-section #sejarah-section-img1 {
+                position: absolute;
+            }
+
+            .sejarah-section #sejarah-section-desc1 {
+                margin-top: 77%;
+            }
+
+        } */
+    </style>
 </head>
+
 <body>
 
     <section class="sejarah-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                <h1 class="title-style">Sejarah Kami</h1>
+                    <h1>Sejarah Kami</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 mt-5">
-                <h4 id="sejarah-section-desc1">SurabayaDev lahir pada tahun 2014 dari 
-                    gagasan bersama yang di inisiasi oleh Achmad 
-                    Fatoni, Arryangga Aliev Pratama, Antoni Putra 
-                    dan atas keinginan teman teman di 
-                    perusahaan tempat kerja yang sama saat itu 
-                    yang ingin membuat sebuah perkumpulan 
-                    dalam sebuah kelas diskusi. Sempat terpikir 
-                    untuk di beri nama Laravel Surabaya, namun 
-                    perkembangan jaman semakin maju 
-                    framework laravel juga akan terganti dengan 
-                    yang baru, maka dari itu tepat pada bulan 
-                    april acara pertama lahirlah Surabaya 
-                    Developer atau disingkat SurabayaDev. 
-                </h4>
+
+            <div id="sejarah-section-1">
+                <div id="sejarah-section-img1">
+                    <img src="./assets/img/2x/pict1-section_sejarah_kami.png  " alt="" class="img-fluid">
+                </div>
+
+                <div id="sejarah-section-desc1">
+                    <p>SurabayaDev lahir pada tahun 2014 dari
+                        gagasan bersama yang di inisiasi oleh Achmad
+                        Fatoni, Arryangga Aliev Pratama, Antoni Putra
+                        dan atas keinginan teman teman di
+                        perusahaan tempat kerja yang sama saat itu
+                        yang ingin membuat sebuah perkumpulan
+                        dalam sebuah kelas diskusi. Sempat terpikir
+                        untuk di beri nama Laravel Surabaya, namun
+                        perkembangan jaman semakin maju
+                        framework laravel juga akan terganti dengan
+                        yang baru, maka dari itu tepat pada bulan
+                        april acara pertama lahirlah Surabaya
+                        Developer atau disingkat SurabayaDev.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div id="sejarah-section-2">
+                <div id="sejarah-section-img2" class="sejarah-section-2-inline">
+                    <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
+                </div>
+                <div id="sejarah-section-desc2" class="sejarah-section-2-inline justify-content-end">
+                    <p>Kegiatan rutin SurabayaDev diadakan setiap
+                        bulan. Lokasi acara SurabayaDev pertama adalah
+                        Dilo Surabaya (Telkom Ketintang 2014-2018).
+                        Selain Dilo Surabaya lokasi co working space
+                        seperti Sub Co juga pernah menjadi tempat acara
+                        SurabayaDev. Namun sejak akhir tahun 2017
+                        SurabayaDev berkembang untuk mencoba hal
+                        baru berkolaborasi dan mendatangi lokasi lokasi
+                        baru seperti lembaga atau institusi pendidikan
+                        untuk lebih dekat dengan teman teman surabaya
+                        dev yang masih berstatus pelajar,mahasiswa
+                        maupun umum. <br>
+                        Seiring perkembangan waktu saat ini Surabaya
+                        Dev memiliki struktur organisasi dan program
+                        kegiatan. Memiliki lebih dari 1500 anggota grup
+                        yang terdapat di forum telegram.
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="row" id="sejarah-section-1">
+                <div class="col-md-6">
+                    <div id="sejarah-section-desc1">
+                        <h5>SurabayaDev lahir pada tahun 2014 dari
+                            gagasan bersama yang di inisiasi oleh Achmad
+                            Fatoni, Arryangga Aliev Pratama, Antoni Putra
+                            dan atas keinginan teman teman di
+                            perusahaan tempat kerja yang sama saat itu
+                            yang ingin membuat sebuah perkumpulan
+                            dalam sebuah kelas diskusi. Sempat terpikir
+                            untuk di beri nama Laravel Surabaya, namun
+                            perkembangan jaman semakin maju
+                            framework laravel juga akan terganti dengan
+                            yang baru, maka dari itu tepat pada bulan
+                            april acara pertama lahirlah Surabaya
+                            Developer atau disingkat SurabayaDev.
+                        </h5>
+                    </div>
+
                 </div>
                 <div class="col-md-6" id="sejarah-section-img1">
-                <img src="./assets/img/2x/pict1-section_sejarah_kami.png  "alt="" class="img-fluid">
+                    <img src="./assets/img/2x/pict1-section_sejarah_kami.png  " alt="" class="img-fluid">
                 </div>
-            </div>
-            <div class="row mt-5">
+            </div> -->
+<!-- 
+            <div class="row" id="sejarah-section-2">
                 <div class="col-md-6 col-lg-6">
-                <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
+                    <img src="./assets/img/2x/pict2-section_sejarah_kami.png" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6 col-lg-6 mt-5">
-                <h4 id="sejarah-section-h42">Kegiatan rutin SurabayaDev diadakan setiap 
-                    bulan. Lokasi acara SurabayaDev pertama adalah 
-                    Dilo Surabaya (Telkom Ketintang 2014-2018). 
-                    Selain Dilo Surabaya lokasi co working space 
-                    seperti Sub Co juga pernah menjadi tempat acara 
-                    SurabayaDev. Namun sejak akhir tahun 2017 
-                    SurabayaDev berkembang untuk mencoba hal 
-                    baru berkolaborasi dan mendatangi lokasi lokasi 
-                    baru seperti lembaga atau institusi pendidikan 
-                    untuk lebih dekat dengan teman teman surabaya 
-                    dev yang masih berstatus pelajar,mahasiswa 
-                    maupun umum. <br>
-                    Seiring perkembangan waktu saat ini Surabaya 
-                    Dev memiliki struktur organisasi dan program 
-                    kegiatan. Memiliki lebih dari 1500 anggota grup 
-                    yang terdapat di forum telegram.</h4>
+                    <p id="sejarah-section-h42">Kegiatan rutin SurabayaDev diadakan setiap
+                        bulan. Lokasi acara SurabayaDev pertama adalah
+                        Dilo Surabaya (Telkom Ketintang 2014-2018).
+                        Selain Dilo Surabaya lokasi co working space
+                        seperti Sub Co juga pernah menjadi tempat acara
+                        SurabayaDev. Namun sejak akhir tahun 2017
+                        SurabayaDev berkembang untuk mencoba hal
+                        baru berkolaborasi dan mendatangi lokasi lokasi
+                        baru seperti lembaga atau institusi pendidikan
+                        untuk lebih dekat dengan teman teman surabaya
+                        dev yang masih berstatus pelajar,mahasiswa
+                        maupun umum. <br>
+                        Seiring perkembangan waktu saat ini Surabaya
+                        Dev memiliki struktur organisasi dan program
+                        kegiatan. Memiliki lebih dari 1500 anggota grup
+                        yang terdapat di forum telegram.</p>
                 </div>
-            </div> 
+            </div> -->
         </div>
-    </section> 
+    </section>
 
     <section class="visimisi-section">
         <div class="container">
@@ -138,13 +252,13 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-8">
-                    <h4 class="text-center">SurabayaDev adalah komunitas IT yang membantu meningkatkan 
-                        dan memanfaatkan potensi pegiat IT di seluruh Indonesia 
-                        khususnya di kota Surabaya dalam bidang teknologi, guna 
-                        mendukung, untuk mewujudkan suatu kondisi yang saling 
-                        melengkapi dalam rangka peningkatan keahlian, dan semangat 
+                    <h5 class="text-center">SurabayaDev adalah komunitas IT yang membantu meningkatkan
+                        dan memanfaatkan potensi pegiat IT di seluruh Indonesia
+                        khususnya di kota Surabaya dalam bidang teknologi, guna
+                        mendukung, untuk mewujudkan suatu kondisi yang saling
+                        melengkapi dalam rangka peningkatan keahlian, dan semangat
                         kerjasama.
-                    </h4>
+                    </h5>
                 </div>
             </div>
             <div class="row mt-5">
@@ -168,8 +282,9 @@
 
 
 
-  <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
-  <script src="./assets/js/popper.min.js"></script>
-  <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>
