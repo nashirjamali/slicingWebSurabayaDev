@@ -14,12 +14,19 @@
           margin-top: 7%;
       }
 
+      .sejarah-section{
+          position: relative;
+      }
+
       .visimisi-section{
           margin-top: 12%;
+          position: relative;
       }
 
       .tim-section{
+          position: relative;
           margin-top: 10%;
+          margin-bottom: 10%;
       }
 
       .program-section{
@@ -27,7 +34,30 @@
       }
 
       #Big-head{
-        width: 100%;
+          width: 100%;
+      }
+
+      /* #buaya-left{
+          position: absolute;
+          top: 2520px;
+          margin-left: 0;
+      } */
+
+      #ring-sejarah{
+          position: absolute;
+          top: 10%;
+      }
+
+      #visimisi-section-ring{
+          position: absolute;
+          top: -50%;
+          right: 0;
+      }
+
+      #tim-section-ring{
+          position: absolute;
+          bottom: 1%;
+          left: 0;
       }
 
       h1{
@@ -79,9 +109,13 @@
             padding-right: 7%;
             padding-left: 7%;
         }
-        
+
         .program-section p{
-         font-size: 1rem;
+            font-size: 1rem;
+        }
+
+        #tim-section-ring{
+            height: 700px;
         }
 
       }
@@ -116,6 +150,11 @@
             padding-right: 0;
             padding-left: 0;
         }
+
+        /* #buaya-left{
+            height: 600px;
+            top: 2380px;
+        } */
         
         .program-section-row2{
             position: relative;
@@ -173,8 +212,10 @@
     </nav>
 
     <img src="./assets/img/2x/bgheader-section_first.png" alt="" id="Big-head">
+    <!-- <img src="./assets/svg/buaya-section_program_kegiatan_kami.svg" id="buaya-left" class="img-fluid" alt=""> -->
 
     <section class="sejarah-section">
+        <img src="./assets/svg/ring_left-section_sejarah_kami.svg" alt="" class="img-fluid" id="ring-sejarah">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -231,6 +272,7 @@
     </section> 
 
     <section class="visimisi-section">
+        <img src="./assets/svg/ring_right-section_visi_misi.svg" alt="" id="visimisi-section-ring">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
@@ -332,6 +374,7 @@
     </section>
 
     <section class="tim-section">
+        <img src="./assets/svg/ring_left-section_tim_kami.svg" class="img-fluid" id="tim-section-ring" alt="">
         <div class="container">
             <div class="row mb-5">
                 <div class="col text-center">
